@@ -1,2 +1,10 @@
-w = 20
-for i in range(w):print(">"+" "*(w-i)+"."*i*2+" "*(w-i)+"<")
+import RPi.GPIO as GPIO
+from time import sleep
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW)
+
+GPIO.output(8, 1)
+sleep(1)
+GPIO.output(8, 0)
+
