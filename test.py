@@ -1,2 +1,2 @@
 w = 20
-print(w)
+for i in range(w):print(">"+" "*(w-i)+"."*i*2+" "*(w-i)+"<")
